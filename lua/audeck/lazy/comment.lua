@@ -11,17 +11,18 @@ return {
 
             toggler = {
                 line = "<C-_>",
-                block = "<S-C-_>",
+                block = "<C-?>",
             },
 
             opleader = {
                 line = "<C-_>",
-                block = "<S-C-_>",
+                block = "<C-?>",
             },
 
-            extra = {},
-
-            mappings = false,
+            mappings = {
+                basic = true,
+                extra = false,
+            },
 
             -- Functions to call before/after (un)comment
             pre_hook = nil,
