@@ -29,7 +29,7 @@ return {
         require('which-key').register({
             ['<leader>'] = {
                 p = {
-                    name = "Project",
+                    name = "[p]roject",
                     f = { "Find file" },
                     a = { "Find file (all)" },
                     A = { "Find file (ALL!) "},

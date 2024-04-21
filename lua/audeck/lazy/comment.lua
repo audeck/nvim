@@ -10,13 +10,13 @@ return {
             sticky = true,
 
             toggler = {
-                line = "<C-/>",
-                block = "<S-C-/>",
+                line = "<C-_>",
+                block = "<S-C-_>",
             },
 
             opleader = {
-                line = "<C-/>",
-                block = "<S-C-/>",
+                line = "<C-_>",
+                block = "<S-C-_>",
             },
 
             extra = {},

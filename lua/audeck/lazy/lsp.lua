@@ -58,7 +58,7 @@ return {
             require("which-key").register({
                 ["<leader>"] = {
                     l = {
-                        name = "[L]SP",
+                        name = "[l]sp",
                         d = { "Go to [d]efinition(s)" },
                         D = { "Go to [D]eclaration(s)" },
                         i = { "Go to [i]mplementation(s)" },
@@ -67,7 +67,7 @@ return {
                         a = { "Inspect code [a]ction(s)" }
                     },
                     d = {
-                        name = "Diagnostics",
+                        name = "[d]iagnostics",
                         s = { "Show [s]elected" },
                         f = { "Show in [f]ile" },
                         a = { "Show [a]ll in project" }
@@ -111,7 +111,7 @@ return {
             mapping = cmp.mapping.preset.insert({
                 ["<C-p>"] = cmp.mapping.select_prev_item(cmp_select),
                 ["<C-n>"] = cmp.mapping.select_next_item(cmp_select),
-                ["<C-y>"] = cmp.mapping.confirm({ select = true }),
+                ["<CR>"] = cmp.mapping.confirm({ select = true }),
                 ["<C-Space>"] = cmp.mapping.complete(),
             }),
 
@@ -182,8 +182,9 @@ return {
         require("lsp_signature").setup({
             bind = true,
             handler_opts = {
-                border = "rounded",
+                -- border = "rounded",
             },
+            hint_enable = false,
         })
     end
 }
