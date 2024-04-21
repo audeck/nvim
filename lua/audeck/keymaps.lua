@@ -10,6 +10,7 @@ vim.keymap.set("n", "<leader>pv", ":Ex<cr>")
 -- [I]: navigate up & half-page scroll up
 vim.keymap.set("", "i", "k")
 vim.keymap.set("", "I", "<C-u>") -- add 'zz' after to center screen
+vim.keymap.set("n", "<C-i>", ":cprev<CR>") -- prev quick fix item
 
 -- [J]: navigate left & navigate to prev word
 vim.keymap.set("", "j", "h")
@@ -18,6 +19,7 @@ vim.keymap.set("", "J", "b")
 -- [K]: navigate down & half-page scroll down
 vim.keymap.set("", "k", "j")
 vim.keymap.set("", "K", "<C-d>")
+vim.keymap.set("n", "<C-k>", ":cnext<CR>") -- prev quick fix item
 
 -- [L]: navigate right & navigate to next word
 vim.keymap.set("", "l", "l")
